@@ -7,26 +7,26 @@ public class OrderManagerGod { // God Class:
     public static String LAST_DISCOUNT_CODE = null; // Global/Static State:
     public static String process(String recipe, int qty, String
             paymentType, String discountCode, boolean printReceipt) { // Long Method - the method  holds way too much responsibility which includes product creation and pricing, discount/tax calculation, payment processing and console output
-        ProductFactory factory = new ProductFactory();
-        Product product = factory.create(recipe);
+        ProductFactory factory = new ProductFactory(); // Feature Envy
+        Product product = factory.create(recipe); // Feature Envy
         Money unitPrice;
         try {
             var priced = product instanceof com.cafepos.decorator.Priced
-                    p ? p.price() : product.basePrice();
+                    p ? p.price() : product.basePrice(); // Feature Envy
             unitPrice = priced;
         } catch (Exception e) {
-            unitPrice = product.basePrice();
+            unitPrice = product.basePrice(); // Feature Envy
         }
         if (qty <= 0) qty = 1;
         Money subtotal = unitPrice.multiply(qty);
         Money discount = Money.zero();
         if (discountCode != null) { //Primitive Obsession
             if (discountCode.equalsIgnoreCase("LOYAL5")) { // Primitive Obsession
-                discount = Money.of(subtotal.asBigDecimal()
-                        .multiply(java.math.BigDecimal.valueOf(5)) //Shotgun risk
+                discount = Money.of(subtotal.asBigDecimal() //Shotgun Surgery risk
+                        .multiply(java.math.BigDecimal.valueOf(5))
                         .divide(java.math.BigDecimal.valueOf(100))); // Duplicated Logic: follow the same formula
             } else if (discountCode.equalsIgnoreCase("COUPON1")) { // Primitive Obsession
-                discount = Money.of(1.00);
+                discount = Money.of(1.00); // Primitive Obsession
             } else if (discountCode.equalsIgnoreCase("NONE")) { // Primitive Obsession
                 discount = Money.zero();
             } else {
@@ -56,13 +56,13 @@ public class OrderManagerGod { // God Class:
         }
         StringBuilder receipt = new StringBuilder(); // Feature Envy
         receipt.append("Order (").append(recipe).append(") x").append(qty).append("\n");
-                receipt.append("Subtotal: ").append(subtotal).append("\n");
+                receipt.append("Subtotal: ").append(subtotal).append("\n");// Feature Envy
         if (discount.asBigDecimal().signum() > 0) {
-            receipt.append("Discount: -").append(discount).append("\n");
+            receipt.append("Discount: -").append(discount).append("\n");// Feature Envy
         }
         receipt.append("Tax (").append(TAX_PERCENT).append("%): ").append(tax).append("\n"); // Primitive Obsession
                 receipt.append("Total: ").append(total);
-        String out = receipt.toString();
+        String out = receipt.toString(); // Primitive Obsession
         if (printReceipt) {
             System.out.println(out);
         }
