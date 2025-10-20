@@ -2,13 +2,13 @@ package com.cafepos.smells;
 import com.cafepos.common.Money;
 import com.cafepos.factory.ProductFactory;
 import com.cafepos.catalog.Product;
-public class OrderManagerGod {
-    public static int TAX_PERCENT = 10;
+public class OrderManagerGod { //God Class:
+    public static int TAX_PERCENT = 10; //Global/Static Stat:
     public static String LAST_DISCOUNT_CODE = null;
     public static String process(String recipe, int qty, String
-            paymentType, String discountCode, boolean printReceipt) {
+            paymentType, String discountCode, boolean printReceipt) { //Long Method - the method  holds way too much responsibility which includes product creation and pricing, discount/tax calculation, payment processing and console output
         ProductFactory factory = new ProductFactory();
-        Product product = factory.create(recipe);
+        Product product = factory.create(recipe); //Feature Envy - our method/class knows too much about product creation
         Money unitPrice;
         try {
             var priced = product instanceof com.cafepos.decorator.Priced
@@ -24,7 +24,7 @@ public class OrderManagerGod {
             if (discountCode.equalsIgnoreCase("LOYAL5")) {
                 discount = Money.of(subtotal.asBigDecimal()
                         .multiply(java.math.BigDecimal.valueOf(5))
-                        .divide(java.math.BigDecimal.valueOf(100)));
+                        .divide(java.math.BigDecimal.valueOf(100))); //Duplicated Logic A: repeated price * (percentage to decimal) calculation for discount and tax
             } else if (discountCode.equalsIgnoreCase("COUPON1")) {
                 discount = Money.of(1.00);
             } else if (discountCode.equalsIgnoreCase("NONE")) {
@@ -40,7 +40,7 @@ public class OrderManagerGod {
                 Money.zero();
         var tax = Money.of(discounted.asBigDecimal()
                 .multiply(java.math.BigDecimal.valueOf(TAX_PERCENT))
-                .divide(java.math.BigDecimal.valueOf(100)));
+                .divide(java.math.BigDecimal.valueOf(100))); //Duplicated Logic A: repeated price * (percentage to decimal) calculation for discount and tax
         var total = discounted.add(tax);
         if (paymentType != null) {
             if (paymentType.equalsIgnoreCase("CASH")) {

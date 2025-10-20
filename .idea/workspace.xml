@@ -4,38 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/catalog/Catalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/catalog/InMemoryCatalog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/catalog/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/common/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week2Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week3CustomDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week3Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week4Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/CustomerNotifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/DeliveryDesk.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/KitchenDisplay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/LineItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/OrderIds.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/OrderObserver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/OrderPublisher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/payment/CardPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/payment/CashPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/payment/PaymentStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/payment/WalletPayment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/CardPaymentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/FakePaymentStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/OrderPayment_DIB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/OrderTotalsTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/TestOrderObserverPattern.java" afterDir="false" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="God method + test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/common/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/common/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/smells/OrderManagerGod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/smells/OrderManagerGod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +35,9 @@
       <scroll-view-position x="0" y="0" />
     </layout>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -72,34 +47,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/erykd/Downloads/cafe-pos-week2-solution&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/erykd/IdeaProjects/CS4928_W2_Lab_22374248/src/main/java/com/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/erykd/Desktop/CS4928_w4_22374248/CS4928_W4_Lab_22374248",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/erykd/IdeaProjects/CS4928_W2_Lab_22374248/src/main/java/com/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestOrderObserverPattern.observers_notified_on_item_add">
+  <component name="RunManager" selected="JUnit.Week6CharacterizationTests">
     <configuration name="TestOrderObserverPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
@@ -111,38 +86,6 @@
       <option name="PACKAGE_NAME" value="com.cafepos" />
       <option name="MAIN_CLASS_NAME" value="com.cafepos.TestOrderObserverPattern" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestOrderObserverPattern.multi_observers_notified_ready" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.TestOrderObserverPattern" />
-      <option name="METHOD_NAME" value="multi_observers_notified_ready" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestOrderObserverPattern.observer_notified_on_paid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.TestOrderObserverPattern" />
-      <option name="METHOD_NAME" value="observer_notified_on_paid" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -179,13 +122,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Week6CharacterizationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week6CharacterizationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week6CharacterizationTests.no_discount_cash_payment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week6CharacterizationTests" />
+      <option name="METHOD_NAME" value="no_discount_cash_payment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Week6CharacterizationTests" />
+        <item itemvalue="JUnit.Week6CharacterizationTests.no_discount_cash_payment" />
         <item itemvalue="JUnit.TestOrderObserverPattern.observers_notified_on_item_add" />
         <item itemvalue="JUnit.TestOrderObserverPattern" />
         <item itemvalue="JUnit.TestOrderObserverPattern.observers_notified_in_sequence" />
-        <item itemvalue="JUnit.TestOrderObserverPattern.observer_notified_on_paid" />
-        <item itemvalue="JUnit.TestOrderObserverPattern.multi_observers_notified_ready" />
       </list>
     </recent_temporary>
   </component>
@@ -209,11 +183,25 @@
       <workItem from="1759224766037" duration="1543000" />
       <workItem from="1759319588814" duration="45000" />
       <workItem from="1759672550343" duration="23060000" />
+      <workItem from="1760976663763" duration="8622000" />
     </task>
+    <task id="LOCAL-00001" summary="God method + test">
+      <option name="closed" value="true" />
+      <created>1760977015850</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1760977015850</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="God method + test" />
+    <option name="LAST_COMMIT_MESSAGE" value="God method + test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

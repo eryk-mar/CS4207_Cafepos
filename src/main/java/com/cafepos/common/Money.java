@@ -7,6 +7,7 @@ public final class Money implements Comparable<Money> {
     public static Money of(double value) {
         return new Money(new BigDecimal(value));
     }
+    public static Money of(BigDecimal value) { return new Money(value); }
     public static Money zero() {
         return new Money(BigDecimal.ZERO);
     }
@@ -25,6 +26,7 @@ public final class Money implements Comparable<Money> {
         //overloading which will allow use to work with percentages elsewhere
         return new Money(this.amount.multiply(BigDecimal.valueOf(factor)));
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -47,5 +49,5 @@ public final class Money implements Comparable<Money> {
         return this.amount.compareTo(other.amount);
     }
 
-
+    public BigDecimal asBigDecimal() {return amount;};
 }
