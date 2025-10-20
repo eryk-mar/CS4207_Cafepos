@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="God method + test">
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="Money Class required Money of(Decimal value)&#10;and the method asBigDecimal();">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/common/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/common/Money.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/smells/OrderManagerGod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/smells/OrderManagerGod.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +182,7 @@
       <workItem from="1759224766037" duration="1543000" />
       <workItem from="1759319588814" duration="45000" />
       <workItem from="1759672550343" duration="23060000" />
-      <workItem from="1760976663763" duration="8622000" />
+      <workItem from="1760976663763" duration="16088000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -193,7 +192,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760977015850</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Money Class required Money of(Decimal value)&#10;and the method asBigDecimal();">
+      <option name="closed" value="true" />
+      <created>1760993590703</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1760993590703</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +208,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="God method + test" />
-    <option name="LAST_COMMIT_MESSAGE" value="God method + test" />
+    <MESSAGE value="Money Class required Money of(Decimal value)&#10;and the method asBigDecimal();" />
+    <option name="LAST_COMMIT_MESSAGE" value="Money Class required Money of(Decimal value)&#10;and the method asBigDecimal();" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
