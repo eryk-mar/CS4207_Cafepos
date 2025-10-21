@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(discount): Extract Interface to fix Primitive Obsession (behaviour preserved)">
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(discount): Extract Interface DiscountPolicy to fix Primitive Obsession (behaviour preserved) (FIX for previous commit)&#10;&#10;NEW&#10;refactor(discount): Extract Class NoDiscount to fix Shotgun Surgery (behavior preserved)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -182,7 +182,7 @@
       <workItem from="1759224766037" duration="1543000" />
       <workItem from="1759319588814" duration="45000" />
       <workItem from="1759672550343" duration="23060000" />
-      <workItem from="1760976663763" duration="19870000" />
+      <workItem from="1760976663763" duration="20229000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -224,7 +224,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761005390375</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor(discount): Extract Interface DiscountPolicy to fix Primitive Obsession (behaviour preserved) (FIX for previous commit)&#10;&#10;NEW&#10;refactor(discount): Extract Class NoDiscount to fix Shotgun Surgery (behavior preserved)">
+      <option name="closed" value="true" />
+      <created>1761006057124</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1761006057124</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -236,7 +244,8 @@
     <MESSAGE value="comments for smell labelling" />
     <MESSAGE value="comments for smell labelling (with corrections)" />
     <MESSAGE value="refactor(discount): Extract Interface to fix Primitive Obsession (behaviour preserved)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(discount): Extract Interface to fix Primitive Obsession (behaviour preserved)" />
+    <MESSAGE value="refactor(discount): Extract Interface DiscountPolicy to fix Primitive Obsession (behaviour preserved) (FIX for previous commit)&#10;&#10;NEW&#10;refactor(discount): Extract Class NoDiscount to fix Shotgun Surgery (behavior preserved)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(discount): Extract Interface DiscountPolicy to fix Primitive Obsession (behaviour preserved) (FIX for previous commit)&#10;&#10;NEW&#10;refactor(discount): Extract Class NoDiscount to fix Shotgun Surgery (behavior preserved)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
