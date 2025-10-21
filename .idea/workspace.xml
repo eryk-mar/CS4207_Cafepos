@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(tax): Extract Class FixedRateTaxPolicy to fix Duplicated Logic (behaviour preserved)">
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/RefactorTestExamples.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,35 +47,74 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/erykd/Desktop/CS4928_w4_22374248/CS4928_W4_Lab_22374248",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/erykd/IdeaProjects/CS4928_W2_Lab_22374248/src/main/java/com/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/erykd/Desktop/CS4928_w4_22374248/CS4928_W4_Lab_22374248&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/erykd/IdeaProjects/CS4928_W2_Lab_22374248/src/main/java/com/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.cafepos.payment" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.Week6CharacterizationTests">
-    <configuration name="TestOrderObserverPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Week2Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week2Demo" />
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week4Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week4Demo" />
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week6Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week6Demo" />
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RefactorTestExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
@@ -83,40 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.TestOrderObserverPattern" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.RefactorTestExamples" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestOrderObserverPattern.observers_notified_in_sequence" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.TestOrderObserverPattern" />
-      <option name="METHOD_NAME" value="observers_notified_in_sequence" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestOrderObserverPattern.observers_notified_on_item_add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.TestOrderObserverPattern" />
-      <option name="METHOD_NAME" value="observers_notified_on_item_add" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,29 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Week6CharacterizationTests.no_discount_cash_payment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week6CharacterizationTests" />
-      <option name="METHOD_NAME" value="no_discount_cash_payment" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.Week6CharacterizationTests" />
-        <item itemvalue="JUnit.Week6CharacterizationTests.no_discount_cash_payment" />
-        <item itemvalue="JUnit.TestOrderObserverPattern.observers_notified_on_item_add" />
-        <item itemvalue="JUnit.TestOrderObserverPattern" />
-        <item itemvalue="JUnit.TestOrderObserverPattern.observers_notified_in_sequence" />
+        <item itemvalue="JUnit.RefactorTestExamples" />
+        <item itemvalue="Application.Week6Demo" />
+        <item itemvalue="Application.Week4Demo" />
+        <item itemvalue="Application.Week2Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +174,8 @@
       <workItem from="1759224766037" duration="1543000" />
       <workItem from="1759319588814" duration="45000" />
       <workItem from="1759672550343" duration="23060000" />
-      <workItem from="1760976663763" duration="23959000" />
+      <workItem from="1760976663763" duration="26291000" />
+      <workItem from="1761022226909" duration="1550000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -304,11 +297,30 @@
       <option name="project" value="LOCAL" />
       <updated>1761009313486</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761010022109</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1761010022109</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="God method + test" />
@@ -321,11 +333,11 @@
     <MESSAGE value="refactor(discount): Extract Class FixedCouponDiscount to fix Primitive Obsession (behaviour preserved)" />
     <MESSAGE value="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behaviour preserved)" />
     <MESSAGE value="refactor(tax): Extract TaxPolicy to fix Shotgun Surgery (behaviour preserved)" />
-    <MESSAGE value="refactor(io): Extract Class ReceiptPrint to fix Feature Envy (behaviour preserved)" />
-    <MESSAGE value="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)" />
     <MESSAGE value="refactor(tax): Extract Class FixedRateTaxPolicy to replace  conditional with polymorphism + fix Duplicated Logic (behaviour preserved)" />
+    <MESSAGE value="refactor(io): Extract Class ReceiptPrint to fix Feature Envy (behaviour preserved)" />
     <MESSAGE value="refactor(tax): Extract Class FixedRateTaxPolicy to fix Duplicated Logic (behaviour preserved)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(tax): Extract Class FixedRateTaxPolicy to fix Duplicated Logic (behaviour preserved)" />
+    <MESSAGE value="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
