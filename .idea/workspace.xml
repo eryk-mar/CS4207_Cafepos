@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="test: add discount policy test for no discounts, loyalty discount, fix and subtotal cap">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/cafepos/DiscountPolicyTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/DiscountPolicyTests.java" afterDir="false" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="test: add tax policy test for tax vs no tax">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +73,7 @@
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TaxPolicyTests">
+  <component name="RunManager" selected="JUnit.PricingServiceTests">
     <configuration name="DiscountPolicyTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
@@ -85,22 +85,6 @@
       <option name="PACKAGE_NAME" value="com.cafepos" />
       <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscountPolicyTests.coupon_discount_applies_fixed_amount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
-      <option name="METHOD_NAME" value="coupon_discount_applies_fixed_amount" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,6 +121,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PricingServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.PricingServiceTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TaxPolicyTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
@@ -154,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PricingServiceTests" />
         <item itemvalue="JUnit.TaxPolicyTests" />
         <item itemvalue="JUnit.DiscountPolicyTests" />
         <item itemvalue="JUnit.DiscountPolicyTests.no_discount_returns_zero" />
         <item itemvalue="JUnit.DiscountPolicyTests.loyalty_discount_calculates_5_percent" />
-        <item itemvalue="JUnit.DiscountPolicyTests.coupon_discount_applies_fixed_amount" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +183,7 @@
       <workItem from="1759672550343" duration="23060000" />
       <workItem from="1760976663763" duration="26291000" />
       <workItem from="1761022226909" duration="1550000" />
-      <workItem from="1761023798139" duration="4714000" />
+      <workItem from="1761023798139" duration="5024000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -362,7 +361,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761028388524</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="test: add tax policy test for tax vs no tax">
+      <option name="closed" value="true" />
+      <created>1761028680343</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1761028680343</updated>
+    </task>
+    <task id="LOCAL-00024" summary="test: add tax policy test for tax vs no tax">
+      <option name="closed" value="true" />
+      <created>1761028691075</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1761028691075</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,9 +412,9 @@
     <MESSAGE value="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)" />
     <MESSAGE value="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)&#10;&#10;+ test examples" />
     <MESSAGE value="refactor(orchestration): Extract Class Checkout (delegation included) to fix GoodClass/LongMethod (behaviour preserved)" />
-    <MESSAGE value="test: add tax policy test for tax vs no tax" />
     <MESSAGE value="test: add discount policy test for no discounts, loyalty discount, fix and subtotal cap" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: add discount policy test for no discounts, loyalty discount, fix and subtotal cap" />
+    <MESSAGE value="test: add tax policy test for tax vs no tax" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: add tax policy test for tax vs no tax" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
