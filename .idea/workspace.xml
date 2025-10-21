@@ -182,7 +182,7 @@
       <workItem from="1759224766037" duration="1543000" />
       <workItem from="1759319588814" duration="45000" />
       <workItem from="1759672550343" duration="23060000" />
-      <workItem from="1760976663763" duration="21588000" />
+      <workItem from="1760976663763" duration="23959000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -272,7 +272,39 @@
       <option name="project" value="LOCAL" />
       <updated>1761007028015</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761007771784</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1761007771784</updated>
+    </task>
+    <task id="LOCAL-00013" summary="refactor(io): Extract Class ReceiptPrint to fix Feature Envy (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761008135904</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1761008135904</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refactor(tax): Extract Class FixedRateTaxPolicy to replace  conditional with polymorphism + fix Duplicated Logic (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761009277253</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1761009277253</updated>
+    </task>
+    <task id="LOCAL-00015" summary="refactor(tax): Extract Class FixedRateTaxPolicy to fix Duplicated Logic (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761009313486</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1761009313486</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +321,9 @@
     <MESSAGE value="refactor(discount): Extract Class FixedCouponDiscount to fix Primitive Obsession (behaviour preserved)" />
     <MESSAGE value="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behaviour preserved)" />
     <MESSAGE value="refactor(tax): Extract TaxPolicy to fix Shotgun Surgery (behaviour preserved)" />
+    <MESSAGE value="refactor(io): Extract Class ReceiptPrint to fix Feature Envy (behaviour preserved)" />
+    <MESSAGE value="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)" />
+    <MESSAGE value="refactor(tax): Extract Class FixedRateTaxPolicy to replace  conditional with polymorphism + fix Duplicated Logic (behaviour preserved)" />
     <MESSAGE value="refactor(tax): Extract Class FixedRateTaxPolicy to fix Duplicated Logic (behaviour preserved)" />
     <option name="LAST_COMMIT_MESSAGE" value="refactor(tax): Extract Class FixedRateTaxPolicy to fix Duplicated Logic (behaviour preserved)" />
   </component>
