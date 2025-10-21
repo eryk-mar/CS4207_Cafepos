@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)&#10;&#10;+ test examples">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/pricing/CheckoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/pricing/CheckoutService.java" afterDir="false" />
-    </list>
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(orchestration): Extract Class Checkout (delegation included) to fix GoodClass/LongMethod (behaviour preserved)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,33 +71,7 @@
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Week6Demo">
-    <configuration name="Week2Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week2Demo" />
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Week4Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week4Demo" />
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.DiscountPolicyTests.no_discount_returns_zero">
     <configuration name="Week6Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week6Demo" />
       <module name="cafe-pos-project" />
@@ -114,7 +85,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RefactorTestExamples" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscountPolicyTests.coupon_discount_applies_fixed_amount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
@@ -123,13 +94,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.RefactorTestExamples" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
+      <option name="METHOD_NAME" value="coupon_discount_applies_fixed_amount" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Week6CharacterizationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DiscountPolicyTests.coupon_discount_caps_at_subtotal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
@@ -138,19 +110,52 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week6CharacterizationTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
+      <option name="METHOD_NAME" value="coupon_discount_caps_at_subtotal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountPolicyTests.loyalty_discount_calculates_5_percent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
+      <option name="METHOD_NAME" value="loyalty_discount_calculates_5_percent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscountPolicyTests.no_discount_returns_zero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
+      <option name="METHOD_NAME" value="no_discount_returns_zero" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DiscountPolicyTests.no_discount_returns_zero" />
+        <item itemvalue="JUnit.DiscountPolicyTests.loyalty_discount_calculates_5_percent" />
+        <item itemvalue="JUnit.DiscountPolicyTests.coupon_discount_applies_fixed_amount" />
+        <item itemvalue="JUnit.DiscountPolicyTests.coupon_discount_caps_at_subtotal" />
         <item itemvalue="Application.Week6Demo" />
-        <item itemvalue="JUnit.Week6CharacterizationTests" />
-        <item itemvalue="JUnit.RefactorTestExamples" />
-        <item itemvalue="Application.Week4Demo" />
-        <item itemvalue="Application.Week2Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +181,7 @@
       <workItem from="1759672550343" duration="23060000" />
       <workItem from="1760976663763" duration="26291000" />
       <workItem from="1761022226909" duration="1550000" />
-      <workItem from="1761023798139" duration="3560000" />
+      <workItem from="1761023798139" duration="4209000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -330,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761024589646</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="refactor(orchestration): Extract Class Checkout (delegation included) to fix GoodClass/LongMethod (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761027466496</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1761027466496</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,7 +377,8 @@
     <MESSAGE value="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)" />
     <MESSAGE value="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)" />
     <MESSAGE value="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)&#10;&#10;+ test examples" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)&#10;&#10;+ test examples" />
+    <MESSAGE value="refactor(orchestration): Extract Class Checkout (delegation included) to fix GoodClass/LongMethod (behaviour preserved)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(orchestration): Extract Class Checkout (delegation included) to fix GoodClass/LongMethod (behaviour preserved)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
