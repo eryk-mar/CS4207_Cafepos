@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behavior preserved)" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(tax): Extract TaxPolicy to fix Shotgun Surgery (behaviour preserved)" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -180,7 +180,7 @@
       <workItem from="1759224766037" duration="1543000" />
       <workItem from="1759319588814" duration="45000" />
       <workItem from="1759672550343" duration="23060000" />
-      <workItem from="1760976663763" duration="20581000" />
+      <workItem from="1760976663763" duration="20975000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -238,7 +238,31 @@
       <option name="project" value="LOCAL" />
       <updated>1761006308906</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor(discount): Extract Class FixedCouponDiscount to fix Primitive Obsession (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761006612111</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1761006612111</updated>
+    </task>
+    <task id="LOCAL-00009" summary="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761006656817</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1761006656817</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refactor(tax): Extract TaxPolicy to fix Shotgun Surgery (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761006853309</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1761006853309</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +276,10 @@
     <MESSAGE value="refactor(discount): Extract Interface to fix Primitive Obsession (behaviour preserved)" />
     <MESSAGE value="refactor(discount): Extract Interface DiscountPolicy to fix Primitive Obsession (behaviour preserved) (FIX for previous commit)&#10;&#10;NEW&#10;refactor(discount): Extract Class NoDiscount to fix Shotgun Surgery (behavior preserved)" />
     <MESSAGE value="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behavior preserved)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behavior preserved)" />
+    <MESSAGE value="refactor(discount): Extract Class FixedCouponDiscount to fix Primitive Obsession (behaviour preserved)" />
+    <MESSAGE value="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behaviour preserved)" />
+    <MESSAGE value="refactor(tax): Extract TaxPolicy to fix Shotgun Surgery (behaviour preserved)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(tax): Extract TaxPolicy to fix Shotgun Surgery (behaviour preserved)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
