@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/RefactorTestExamples.java" afterDir="false" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)&#10;&#10;+ test examples">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/pricing/CheckoutService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/pricing/CheckoutService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +74,7 @@
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Week6CharacterizationTests">
+  <component name="RunManager" selected="Application.Week6Demo">
     <configuration name="Week2Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week2Demo" />
       <module name="cafe-pos-project" />
@@ -146,9 +146,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Week6Demo" />
         <item itemvalue="JUnit.Week6CharacterizationTests" />
         <item itemvalue="JUnit.RefactorTestExamples" />
-        <item itemvalue="Application.Week6Demo" />
         <item itemvalue="Application.Week4Demo" />
         <item itemvalue="Application.Week2Demo" />
       </list>
@@ -176,6 +176,7 @@
       <workItem from="1759672550343" duration="23060000" />
       <workItem from="1760976663763" duration="26291000" />
       <workItem from="1761022226909" duration="1550000" />
+      <workItem from="1761023798139" duration="3560000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -305,7 +306,31 @@
       <option name="project" value="LOCAL" />
       <updated>1761010022109</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761024476563</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1761024476563</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)">
+      <option name="closed" value="true" />
+      <created>1761024526800</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1761024526800</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)&#10;&#10;+ test examples">
+      <option name="closed" value="true" />
+      <created>1761024589646</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1761024589646</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +362,9 @@
     <MESSAGE value="refactor(io): Extract Class ReceiptPrint to fix Feature Envy (behaviour preserved)" />
     <MESSAGE value="refactor(tax): Extract Class FixedRateTaxPolicy to fix Duplicated Logic (behaviour preserved)" />
     <MESSAGE value="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(pricing): Extract Class PricingService to fix GoodClass/LongMethod (behaviour preserved)" />
+    <MESSAGE value="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)" />
+    <MESSAGE value="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)&#10;&#10;+ test examples" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(checkout): Extract Class Checkout to fix GoodClass/LongMethod (behaviour preserved)&#10;&#10;+ test examples" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
