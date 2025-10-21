@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="test: add receipt printer tests strings with all line discounts and discount zero limit" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="test: add checkout services tests totals, qty, payment strategy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/pricing/ReceiptPrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/pricing/ReceiptPrinter.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +74,46 @@
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CheckoutServiceTests">
+  <component name="RunManager" selected="Application.com.cafepos.demo.Week6DemoCLI">
+    <configuration name="Week6Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week6Demo" />
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week6DemoCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.cafepos.demo.Week6DemoCLI" />
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.cafepos.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.cafepos.demo.Week6DemoCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week6DemoCLI" />
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CheckoutServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
@@ -82,36 +124,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.cafepos" />
       <option name="MAIN_CLASS_NAME" value="com.cafepos.CheckoutServiceTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscountPolicyTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PricingServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.PricingServiceTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -132,28 +144,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TaxPolicyTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.TaxPolicyTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.cafepos.demo.Week6DemoCLI" />
+        <item itemvalue="Application.Week6Demo" />
+        <item itemvalue="Application.Week6DemoCLI" />
         <item itemvalue="JUnit.CheckoutServiceTests" />
         <item itemvalue="JUnit.ReceiptPrinterTests" />
-        <item itemvalue="JUnit.PricingServiceTests" />
-        <item itemvalue="JUnit.TaxPolicyTests" />
-        <item itemvalue="JUnit.DiscountPolicyTests" />
       </list>
     </recent_temporary>
   </component>
@@ -179,7 +176,7 @@
       <workItem from="1759672550343" duration="23060000" />
       <workItem from="1760976663763" duration="26291000" />
       <workItem from="1761022226909" duration="1550000" />
-      <workItem from="1761023798139" duration="5542000" />
+      <workItem from="1761023798139" duration="8208000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -389,7 +386,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761029266226</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="test: add checkout services tests totals, qty, payment strategy">
+      <option name="closed" value="true" />
+      <created>1761029495058</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1761029495058</updated>
+    </task>
+    <task id="LOCAL-00028" summary="test: add checkout services tests totals, qty, payment strategy">
+      <option name="closed" value="true" />
+      <created>1761029507027</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1761029507027</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -428,7 +441,8 @@
     <MESSAGE value="test: add tax policy test for tax vs no tax" />
     <MESSAGE value="test: add tax pricing service tests for loyalty+tax, no discount and negatives" />
     <MESSAGE value="test: add receipt printer tests strings with all line discounts and discount zero limit" />
-    <option name="LAST_COMMIT_MESSAGE" value="test: add receipt printer tests strings with all line discounts and discount zero limit" />
+    <MESSAGE value="test: add checkout services tests totals, qty, payment strategy" />
+    <option name="LAST_COMMIT_MESSAGE" value="test: add checkout services tests totals, qty, payment strategy" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
