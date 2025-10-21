@@ -73,7 +73,7 @@
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PricingServiceTests">
+  <component name="RunManager" selected="JUnit.ReceiptPrinterTests">
     <configuration name="DiscountPolicyTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
@@ -85,22 +85,6 @@
       <option name="PACKAGE_NAME" value="com.cafepos" />
       <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DiscountPolicyTests.loyalty_discount_calculates_5_percent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.DiscountPolicyTests" />
-      <option name="METHOD_NAME" value="loyalty_discount_calculates_5_percent" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,6 +120,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReceiptPrinterTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.ReceiptPrinterTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TaxPolicyTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
@@ -153,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReceiptPrinterTests" />
         <item itemvalue="JUnit.PricingServiceTests" />
         <item itemvalue="JUnit.TaxPolicyTests" />
         <item itemvalue="JUnit.DiscountPolicyTests" />
         <item itemvalue="JUnit.DiscountPolicyTests.no_discount_returns_zero" />
-        <item itemvalue="JUnit.DiscountPolicyTests.loyalty_discount_calculates_5_percent" />
       </list>
     </recent_temporary>
   </component>
