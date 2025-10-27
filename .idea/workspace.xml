@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="Addition of the standard demo and one with an interactive commandline interface.">
-      <change afterPath="$PROJECT_DIR$/CS4928_Midterm_UML.png" afterDir="false" />
-    </list>
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="UML_Updated to reflect on dependencies and association better" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -76,26 +74,13 @@
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestOrderObserverPattern">
+  <component name="RunManager" selected="JUnit.ReceiptPrinterTests.receipt_includes_all_lines_with_discount">
     <configuration name="Week6Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week6Demo" />
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.cafepos.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Week6DemoCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.cafepos.demo.Week6DemoCLI" />
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.cafepos.demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,7 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CheckoutServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReceiptPrinterTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
@@ -125,8 +110,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.CheckoutServiceTests" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.ReceiptPrinterTests" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReceiptPrinterTests.receipt_includes_all_lines_with_discount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.ReceiptPrinterTests" />
+      <option name="METHOD_NAME" value="receipt_includes_all_lines_with_discount" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,11 +149,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReceiptPrinterTests.receipt_includes_all_lines_with_discount" />
+        <item itemvalue="JUnit.ReceiptPrinterTests" />
         <item itemvalue="JUnit.TestOrderObserverPattern" />
         <item itemvalue="Application.com.cafepos.demo.Week6DemoCLI" />
         <item itemvalue="Application.Week6Demo" />
-        <item itemvalue="Application.Week6DemoCLI" />
-        <item itemvalue="JUnit.CheckoutServiceTests" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +181,7 @@
       <workItem from="1761022226909" duration="1550000" />
       <workItem from="1761023798139" duration="11423000" />
       <workItem from="1761079014104" duration="2178000" />
-      <workItem from="1761566914850" duration="6271000" />
+      <workItem from="1761566914850" duration="9258000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -422,7 +423,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761578390109</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="UML_Updated to reflect on dependencies and association better">
+      <option name="closed" value="true" />
+      <created>1761578977097</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1761578977097</updated>
+    </task>
+    <task id="LOCAL-00032" summary="UML_Updated to reflect on dependencies and association better">
+      <option name="closed" value="true" />
+      <created>1761578982083</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1761578982083</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +480,8 @@
     <MESSAGE value="test: add receipt printer tests strings with all line discounts and discount zero limit" />
     <MESSAGE value="test: add checkout services tests totals, qty, payment strategy" />
     <MESSAGE value="Addition of the standard demo and one with an interactive commandline interface." />
-    <option name="LAST_COMMIT_MESSAGE" value="Addition of the standard demo and one with an interactive commandline interface." />
+    <MESSAGE value="UML_Updated to reflect on dependencies and association better" />
+    <option name="LAST_COMMIT_MESSAGE" value="UML_Updated to reflect on dependencies and association better" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
