@@ -21,7 +21,10 @@ public class Order {
         notifyObservers("itemAdded");
 
     }
+    public void removeLastItem(){
+        items.removeLast();
 
+    }
     public Money subtotal() {
         return
                 items.stream().map(LineItem::lineTotal).reduce(Money.zero(), Money::add);

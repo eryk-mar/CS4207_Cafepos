@@ -98,13 +98,14 @@ public class Week6DemoCLI {
             }
 
             try {
+                //Proof of God class object creation
                 String oldReceipt = OrderManagerGod.process(recipe, qty, paymentType, discountCode, false);
-
+                //Proof of new refactoring that follows SOLID principles
                 DiscountPolicy discountPolicy;
                 if (discountCode.equals("LOYAL5")) {
-                    discountPolicy = new LoyaltyPercentDiscount(5);
+                    discountPolicy = new LoyaltyPercentDiscount(5); //5 percent reduction
                 } else if (discountCode.equals("COUPON1")) {
-                    discountPolicy = new FixedCouponDiscount(Money.of(1.00));
+                    discountPolicy = new FixedCouponDiscount(Money.of(1.00)); //subtracts a euro
                 } else {
                     discountPolicy = new NoDiscount();
                 }

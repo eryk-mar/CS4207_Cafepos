@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="UML_Updated to reflect on dependencies and association better" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/AddItemCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/MacroCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/PayOrderCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/PosRemote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week8Demo_Commands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week6DemoCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week6DemoCLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/Order.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,9 +85,9 @@
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ReceiptPrinterTests.receipt_includes_all_lines_with_discount">
-    <configuration name="Week6Demo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week6Demo" />
+  <component name="RunManager" selected="Application.Week8Demo_Commands">
+    <configuration name="Week8Demo_Commands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week8Demo_Commands" />
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
@@ -149,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Week8Demo_Commands" />
+        <item itemvalue="Application.com.cafepos.demo.Week6DemoCLI" />
         <item itemvalue="JUnit.ReceiptPrinterTests.receipt_includes_all_lines_with_discount" />
         <item itemvalue="JUnit.ReceiptPrinterTests" />
         <item itemvalue="JUnit.TestOrderObserverPattern" />
-        <item itemvalue="Application.com.cafepos.demo.Week6DemoCLI" />
-        <item itemvalue="Application.Week6Demo" />
       </list>
     </recent_temporary>
   </component>
@@ -181,7 +192,9 @@
       <workItem from="1761022226909" duration="1550000" />
       <workItem from="1761023798139" duration="11423000" />
       <workItem from="1761079014104" duration="2178000" />
-      <workItem from="1761566914850" duration="9258000" />
+      <workItem from="1761566914850" duration="13604000" />
+      <workItem from="1761648597281" duration="8914000" />
+      <workItem from="1762170925552" duration="3402000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -439,7 +452,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761578982083</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="indentation error fix causing test to fail">
+      <option name="closed" value="true" />
+      <created>1761596834379</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1761596834379</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +502,8 @@
     <MESSAGE value="test: add checkout services tests totals, qty, payment strategy" />
     <MESSAGE value="Addition of the standard demo and one with an interactive commandline interface." />
     <MESSAGE value="UML_Updated to reflect on dependencies and association better" />
-    <option name="LAST_COMMIT_MESSAGE" value="UML_Updated to reflect on dependencies and association better" />
+    <MESSAGE value="indentation error fix causing test to fail" />
+    <option name="LAST_COMMIT_MESSAGE" value="indentation error fix causing test to fail" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
