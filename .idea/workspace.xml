@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/AddItemCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/MacroCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/PayOrderCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/command/PosRemote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week8Demo_Commands.java" afterDir="false" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="Initial Command Pattern with updated removeLastItem() in OrderService :D">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week8Demo_Adapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/printing/LegacyPrinterAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/printing/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vendor/legacy/LegacyThermalPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/Week8CommandAdapterTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week6DemoCLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week6DemoCLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/factory/ProductFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/factory/ProductFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,34 +82,8 @@
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Week8Demo_Commands">
-    <configuration name="Week8Demo_Commands" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week8Demo_Commands" />
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="com.cafepos.demo.Week6DemoCLI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week6DemoCLI" />
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReceiptPrinterTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Week8CommandAdapterTests.integration_uses_exact_week5_pricing">
+    <configuration name="Week8CommandAdapterTests.adapter_converts_text_to_bytes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
@@ -121,29 +92,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.ReceiptPrinterTests" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ReceiptPrinterTests.receipt_includes_all_lines_with_discount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.ReceiptPrinterTests" />
-      <option name="METHOD_NAME" value="receipt_includes_all_lines_with_discount" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week8CommandAdapterTests" />
+      <option name="METHOD_NAME" value="adapter_converts_text_to_bytes" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestOrderObserverPattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Week8CommandAdapterTests.integration_invoker_calls_commands_and_produces_correct_prices" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
@@ -152,19 +108,68 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.TestOrderObserverPattern" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week8CommandAdapterTests" />
+      <option name="METHOD_NAME" value="integration_invoker_calls_commands_and_produces_correct_prices" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week8CommandAdapterTests.integration_uses_exact_week5_pricing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week8CommandAdapterTests" />
+      <option name="METHOD_NAME" value="integration_uses_exact_week5_pricing" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week8CommandAdapterTests.invoker_calls_correct_command_and_undo_reverses_change" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week8CommandAdapterTests" />
+      <option name="METHOD_NAME" value="invoker_calls_correct_command_and_undo_reverses_change" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week8CommandAdapterTests.macroCommand_undo_reverts_commands_in_reverse_order" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.cafepos" />
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.Week8CommandAdapterTests" />
+      <option name="METHOD_NAME" value="macroCommand_undo_reverts_commands_in_reverse_order" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Week8Demo_Commands" />
-        <item itemvalue="Application.com.cafepos.demo.Week6DemoCLI" />
-        <item itemvalue="JUnit.ReceiptPrinterTests.receipt_includes_all_lines_with_discount" />
-        <item itemvalue="JUnit.ReceiptPrinterTests" />
-        <item itemvalue="JUnit.TestOrderObserverPattern" />
+        <item itemvalue="JUnit.Week8CommandAdapterTests.integration_uses_exact_week5_pricing" />
+        <item itemvalue="JUnit.Week8CommandAdapterTests.integration_invoker_calls_commands_and_produces_correct_prices" />
+        <item itemvalue="JUnit.Week8CommandAdapterTests.invoker_calls_correct_command_and_undo_reverses_change" />
+        <item itemvalue="JUnit.Week8CommandAdapterTests.macroCommand_undo_reverts_commands_in_reverse_order" />
+        <item itemvalue="JUnit.Week8CommandAdapterTests.adapter_converts_text_to_bytes" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +199,9 @@
       <workItem from="1761079014104" duration="2178000" />
       <workItem from="1761566914850" duration="13604000" />
       <workItem from="1761648597281" duration="8914000" />
-      <workItem from="1762170925552" duration="3402000" />
+      <workItem from="1762170925552" duration="5966000" />
+      <workItem from="1762181981710" duration="634000" />
+      <workItem from="1762197063506" duration="12221000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -460,7 +467,23 @@
       <option name="project" value="LOCAL" />
       <updated>1761596834379</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Initial Command Pattern without changing removeLastItem() in OrderService">
+      <option name="closed" value="true" />
+      <created>1762174572417</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1762174572417</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Initial Command Pattern with updated removeLastItem() in OrderService :D">
+      <option name="closed" value="true" />
+      <created>1762174661130</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1762174661130</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,8 +501,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="God method + test" />
-    <MESSAGE value="Money Class required Money of(Decimal value)&#10;and the method asBigDecimal();" />
     <MESSAGE value="comments for smell labelling" />
     <MESSAGE value="comments for smell labelling (with corrections)" />
     <MESSAGE value="refactor(discount): Extract Interface to fix Primitive Obsession (behaviour preserved)" />
@@ -503,7 +524,9 @@
     <MESSAGE value="Addition of the standard demo and one with an interactive commandline interface." />
     <MESSAGE value="UML_Updated to reflect on dependencies and association better" />
     <MESSAGE value="indentation error fix causing test to fail" />
-    <option name="LAST_COMMIT_MESSAGE" value="indentation error fix causing test to fail" />
+    <MESSAGE value="Initial Command Pattern without changing removeLastItem() in OrderService" />
+    <MESSAGE value="Initial Command Pattern with updated removeLastItem() in OrderService :D" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Command Pattern with updated removeLastItem() in OrderService :D" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

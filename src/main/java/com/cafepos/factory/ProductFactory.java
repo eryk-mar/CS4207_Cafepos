@@ -24,10 +24,10 @@ public final class ProductFactory {
         };
         for (int i = 1; i < parts.length; i++) {
             p = switch (parts[i]) {
-                case "SHOT" -> new ExtraShot(p);
-                case "OAT" -> new OatMilk(p);
-                case "SYP" -> new Syrup(p);
-                case "L" -> new SizeLarge(p);
+                case "SHOT" -> new ExtraShot(p); // 0.80
+                case "OAT" -> new OatMilk(p); // 0.50
+                case "SYP" -> new Syrup(p);  //0.40
+                case "L" -> new SizeLarge(p); // 0.70
                 default -> throw new
                         IllegalArgumentException("Unknown addon: " + parts[i]);
             };
