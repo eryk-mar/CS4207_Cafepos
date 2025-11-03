@@ -1,7 +1,11 @@
 package com.cafepos.printing;
+
 import vendor.legacy.LegacyThermalPrinter;
+
 import java.nio.charset.StandardCharsets;
-public final class LegacyPrinterAdapter implements Printer {
+
+public class LegacyPrinterAdapter implements Printer{
+
     private final LegacyThermalPrinter adaptee;
     public LegacyPrinterAdapter(LegacyThermalPrinter adaptee) {
         this.adaptee = adaptee; }
