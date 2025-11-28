@@ -3,10 +3,13 @@ package com.cafepos.domain;
 import com.cafepos.common.Money;
 import com.cafepos.observer.OrderObserver;
 import com.cafepos.payment.PaymentStrategy;
+
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Order {
+public final class Order {
     private final long id;
     private final List<LineItem> items = new ArrayList<>();
     private final List<OrderObserver> observers = new ArrayList<>();
@@ -22,7 +25,9 @@ public class Order {
 
     }
     public void removeLastItem(){
-        items.removeLast();
+        if (!items.isEmpty()) {
+            items.removeLast();
+        }
 
     }
     public Money subtotal() {
@@ -31,8 +36,8 @@ public class Order {
     }
 
     public Money taxAtPercent(double percent) {
-        double taxRate = percent / 100.0;
-        return subtotal().multiply(taxRate);
+        var bd = subtotal().asBigDecimal().multiply(BigDecimal.valueOf(percent)).divide(BigDecimal.valueOf(100), RoundingMode.HALF_UP);
+        return Money.of(bd);
     }
 
     public Money totalWithTax(double percent) {
