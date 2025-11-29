@@ -1,10 +1,5 @@
 package com.cafepos.menu;
-
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.Iterator;
-import java.util.NoSuchElementException;
-
+import java.util.*;
 public final class CompositeIterator implements Iterator<MenuComponent> {
     private final Deque<Iterator<MenuComponent>> stack = new
             ArrayDeque<>();
@@ -26,5 +21,4 @@ public final class CompositeIterator implements Iterator<MenuComponent> {
         }
         return comp;
     }
-
 }

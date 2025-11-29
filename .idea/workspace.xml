@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="Added tests">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week9Demo_Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week9Demo_State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/CompositeIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/MenuComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/MenuItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/state/CancelledState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/state/DeliveredState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/state/NewState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/state/OrderFSM.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/state/PreparingState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/state/ReadyState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/state/State.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/W9_Composite_Iterator_TEST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/W9_Integration_TEST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/cafepos/W9_State_TEST.java" afterDir="false" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="addition of states + tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/app/events/EventBus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/app/events/OrderCreated.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/app/events/OrderEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/app/events/OrderPaid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/Week10Demo_MVC.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/ui/ConsoleView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/ui/EventWiringDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/ui/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/CompositeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/CompositeIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/MenuComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/MenuComponent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/MenuItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/menu/MenuItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -70,7 +66,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/erykd/CS4297-Building_A_Search_Engine_With_ElasticSearch&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/erykd/Downloads/cafe-pos-week10-solution_v2(1)/cafe-pos-week10-solution_v2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -89,22 +85,34 @@
       <recent name="C:\Users\erykd\Desktop\CS4928_w4_22374248\CS4928_W4_Lab_22374248" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.cafepos.app.events" />
+      <recent name="com.cafepos.demo" />
       <recent name="com.cafepos.payment" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.W9_Integration_TEST.compositeMenu_Factory_State_Integration">
-    <configuration name="W9_Composite_Iterator_TEST.compositeIterator_DepthFirstTraversal_WithComplexStructure" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.EventWiringDemo">
+    <configuration name="EventWiringDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.ui.EventWiringDemo" />
       <module name="cafe-pos-project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
+          <option name="PATTERN" value="com.cafepos.ui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.W9_Composite_Iterator_TEST" />
-      <option name="METHOD_NAME" value="compositeIterator_DepthFirstTraversal_WithComplexStructure" />
-      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Week10Demo_MVC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.cafepos.demo.Week10Demo_MVC" />
+      <module name="cafe-pos-project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.cafepos.demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -141,22 +149,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="W9_Integration_TEST.compositeMenu_Factory_Integration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="cafe-pos-project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.cafepos.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.cafepos" />
-      <option name="MAIN_CLASS_NAME" value="com.cafepos.W9_Integration_TEST" />
-      <option name="METHOD_NAME" value="compositeMenu_Factory_Integration" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="W9_Integration_TEST.compositeMenu_Factory_State_Integration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="cafe-pos-project" />
       <extension name="coverage">
@@ -175,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EventWiringDemo" />
+        <item itemvalue="Application.Week10Demo_MVC" />
         <item itemvalue="JUnit.W9_Integration_TEST.compositeMenu_Factory_State_Integration" />
         <item itemvalue="JUnit.W9_Composite_Iterator_TEST.compositeIterator_DepthFirst_WithYourStructure" />
         <item itemvalue="JUnit.W9_Composite_Iterator_TEST.compositeIterator_TrueDepthFirstTraversal_Verification" />
-        <item itemvalue="JUnit.W9_Composite_Iterator_TEST.compositeIterator_DepthFirstTraversal_WithComplexStructure" />
-        <item itemvalue="JUnit.W9_Integration_TEST.compositeMenu_Factory_Integration" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +206,8 @@
       <workItem from="1762197063506" duration="15640000" />
       <workItem from="1762253378038" duration="5007000" />
       <workItem from="1762711817436" duration="41000" />
-      <workItem from="1762788541813" duration="19564000" />
+      <workItem from="1762788541813" duration="23419000" />
+      <workItem from="1764427057813" duration="4350000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -504,7 +497,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762210067898</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="addition of states + tests">
+      <option name="closed" value="true" />
+      <created>1762822479102</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1762822479102</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +523,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="comments for smell labelling (with corrections)" />
     <MESSAGE value="refactor(discount): Extract Interface to fix Primitive Obsession (behaviour preserved)" />
     <MESSAGE value="refactor(discount): Extract Interface DiscountPolicy to fix Primitive Obsession (behaviour preserved) (FIX for previous commit)&#10;&#10;NEW&#10;refactor(discount): Extract Class NoDiscount to fix Shotgun Surgery (behavior preserved)" />
     <MESSAGE value="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behavior preserved)" />
@@ -547,7 +547,8 @@
     <MESSAGE value="Initial Command Pattern without changing removeLastItem() in OrderService" />
     <MESSAGE value="Initial Command Pattern with updated removeLastItem() in OrderService :D" />
     <MESSAGE value="Added tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added tests" />
+    <MESSAGE value="addition of states + tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="addition of states + tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

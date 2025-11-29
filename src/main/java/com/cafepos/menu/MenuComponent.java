@@ -1,9 +1,6 @@
 package com.cafepos.menu;
-
 import com.cafepos.common.Money;
-
 import java.util.Iterator;
-
 public abstract class MenuComponent {
     // Composite ops (unsupported by default → safe)
     public void add(MenuComponent c) { throw new

@@ -1,10 +1,7 @@
 package com.cafepos.menu;
-
 import com.cafepos.common.Money;
-
 import java.util.Collections;
 import java.util.Iterator;
-
 public final class MenuItem extends MenuComponent {
     private final String name;
     private final Money price;
@@ -13,7 +10,8 @@ public final class MenuItem extends MenuComponent {
         if (name == null || name.isBlank()) throw new
                 IllegalArgumentException("name required");
         if (price == null) throw new IllegalArgumentException("price required");
-        this.name = name; this.price = price; this.vegetarian = vegetarian;
+        this.name = name; this.price = price; this.vegetarian =
+                vegetarian;
     }
     @Override public String name() { return name; }
     @Override public Money price() { return price; }
