@@ -37,3 +37,37 @@ Trade-offs: Layering vs Partitioning
 The current scope of the Café POS & Delivery system is small and tightly integrated. By not starting with microservices, we avoid the complexity of distributed systems.
 Since the module is about learning design patterns, a layered monolith allows us to concentrate on clean architecture, cohesion, and maintainability.
 It also simplifies testing and development, enabling faster iteration while the domain model is still evolving.
+
+ADR: Use Layered Monolith Architecture
+
+Context:
+The current scope of the Café POS & Delivery system is small and tightly integrated.
+By not starting with microservices, we avoid the complexity of distributed systems.
+Since the module is about learning design patterns, a layered monolith allows us to concentrate on clean architecture,
+cohesion, and maintainability.
+It also simplifies testing and development, enabling faster iteration while the domain model is still evolving.
+
+Decision:
+Use a Layered Monolith with Presentation, Service, Domain, and Infrastructure layers.
+
+Alternatives:
+- Microservices
+- Modular Monolith
+
+Rationale:
+A monolith keeps the application simple, reduces deployment overhead, avoids distributed-system complexity,
+and allows us to focus on clean design patterns.
+
+Consequences:
+
+Pros
+- Easy to develop and test
+- No network overhead or service deployment
+- Clean boundaries inside the codebase
+- Faster iteration while the domain is still evolving
+- Layered structure keeps the option open for future extraction into services
+
+Cons
+- Not independently deployable
+- Harder to scale individual components
+- If the system grows very large, extraction work will be needed
