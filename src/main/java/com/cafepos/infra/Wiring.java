@@ -2,9 +2,9 @@ package com.cafepos.infra;
 
 import com.cafepos.app.CheckoutService;
 import com.cafepos.domain.OrderRepository;
-import com.cafepos.pricing.FixedRateTaxPolicy;
-import com.cafepos.pricing.LoyaltyPercentDiscount;
-import com.cafepos.pricing.PricingService;
+import com.cafepos.domain.pricing.FixedRateTaxPolicy;
+import com.cafepos.domain.pricing.LoyaltyPercentDiscount;
+import com.cafepos.domain.pricing.PricingService;
 
 public final class Wiring {
     public static record Components(OrderRepository repo, PricingService

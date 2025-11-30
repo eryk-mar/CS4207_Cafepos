@@ -1,12 +1,14 @@
 package com.cafepos;
-import com.cafepos.command.*;
-import com.cafepos.common.Money;
+import com.cafepos.app.command.*;
+import com.cafepos.domain.common.Money;
 import com.cafepos.domain.Order;
-import com.cafepos.payment.CashPayment;
-import vendor.legacy.LegacyThermalPrinter;
+import com.cafepos.domain.payment.CashPayment;
+import com.cafepos.infra.printing.LegacyPrinterAdapter;
+import com.cafepos.infra.printing.Printer;
+import com.cafepos.infra.vendor.legacy.LegacyThermalPrinter;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import com.cafepos.printing.*;
+
 public class Week8CommandAdapterTests {
 
     @Test

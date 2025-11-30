@@ -1,12 +1,15 @@
 package com.cafepos;
 
-import com.cafepos.catalog.SimpleProduct;
-import com.cafepos.catalog.Product;
-import com.cafepos.common.Money;
-import com.cafepos.decorator.*;
-import com.cafepos.factory.ProductFactory;
+import com.cafepos.domain.catalog.SimpleProduct;
+import com.cafepos.domain.catalog.Product;
+import com.cafepos.domain.common.Money;
+import com.cafepos.app.factory.ProductFactory;
 import com.cafepos.domain.Order;  // Fixed import
 import com.cafepos.domain.LineItem;  // Fixed import
+import com.cafepos.domain.decorator.ExtraShot;
+import com.cafepos.domain.decorator.OatMilk;
+import com.cafepos.domain.decorator.Priced;
+import com.cafepos.domain.decorator.SizeLarge;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

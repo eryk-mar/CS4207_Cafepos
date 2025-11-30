@@ -1,14 +1,16 @@
 package com.cafepos;
 
-import com.cafepos.catalog.Product;
-import com.cafepos.decorator.Priced;
+import com.cafepos.domain.catalog.Product;
+import com.cafepos.domain.decorator.Priced;
 import com.cafepos.domain.LineItem;
 import com.cafepos.domain.Order;
 import com.cafepos.domain.OrderIds;
-import com.cafepos.factory.ProductFactory;
-import com.cafepos.menu.*;
-import com.cafepos.common.Money;
-import com.cafepos.state.OrderFSM;
+import com.cafepos.app.factory.ProductFactory;
+import com.cafepos.domain.menu.Menu;
+import com.cafepos.domain.menu.MenuComponent;
+import com.cafepos.domain.menu.MenuItem;
+import com.cafepos.domain.common.Money;
+import com.cafepos.domain.state.OrderFSM;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

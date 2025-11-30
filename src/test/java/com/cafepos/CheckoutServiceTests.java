@@ -1,9 +1,8 @@
 package com.cafepos;
 
-import com.cafepos.pricing.*;
-import com.cafepos.common.Money;
-import com.cafepos.factory.ProductFactory;
-import com.cafepos.payment.PaymentStrategy;
+import com.cafepos.domain.pricing.*;
+import com.cafepos.app.factory.ProductFactory;
+import com.cafepos.domain.payment.PaymentStrategy;
 import com.cafepos.domain.Order;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

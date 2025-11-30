@@ -2,7 +2,7 @@ package com.cafepos.app;
 
 import com.cafepos.domain.Order;
 import com.cafepos.domain.OrderRepository;
-import com.cafepos.pricing.PricingService;
+import com.cafepos.domain.pricing.PricingService;
 
 public final class CheckoutService {
     private final OrderRepository orders;

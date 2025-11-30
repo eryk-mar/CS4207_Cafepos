@@ -1,5 +1,5 @@
 package com.cafepos;
-import com.cafepos.payment.PaymentStrategy;
+import com.cafepos.domain.payment.PaymentStrategy;
 import com.cafepos.domain.Order;
 
 public class FakePaymentStrategy implements PaymentStrategy {

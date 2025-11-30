@@ -1,5 +1,5 @@
 package com.cafepos;
-import com.cafepos.state.*;
+import com.cafepos.domain.state.OrderFSM;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class W9_State_TEST {

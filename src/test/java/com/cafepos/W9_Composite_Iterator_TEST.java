@@ -1,6 +1,8 @@
 package com.cafepos;
-import com.cafepos.menu.*;
-import com.cafepos.common.Money;
+import com.cafepos.domain.menu.Menu;
+import com.cafepos.domain.menu.MenuComponent;
+import com.cafepos.domain.menu.MenuItem;
+import com.cafepos.domain.common.Money;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;

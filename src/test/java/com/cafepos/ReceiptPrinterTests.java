@@ -1,7 +1,8 @@
 package com.cafepos;
 
-import com.cafepos.pricing.*;
-import com.cafepos.common.Money;
+import com.cafepos.domain.pricing.PricingService;
+import com.cafepos.domain.pricing.ReceiptPrinter;
+import com.cafepos.domain.common.Money;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 

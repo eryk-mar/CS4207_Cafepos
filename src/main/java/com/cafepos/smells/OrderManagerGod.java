@@ -1,7 +1,9 @@
 package com.cafepos.smells;
-import com.cafepos.common.Money;
-import com.cafepos.factory.ProductFactory;
-import com.cafepos.catalog.Product;
+import com.cafepos.domain.common.Money;
+import com.cafepos.app.factory.ProductFactory;
+import com.cafepos.domain.catalog.Product;
+import com.cafepos.domain.decorator.Priced;
+
 public class OrderManagerGod { // God Class:
     public static int TAX_PERCENT = 10; // Global/Static State
     public static String LAST_DISCOUNT_CODE = null; // Global/Static State:
@@ -11,7 +13,7 @@ public class OrderManagerGod { // God Class:
         Product product = factory.create(recipe); // Feature Envy
         Money unitPrice;
         try {
-            var priced = product instanceof com.cafepos.decorator.Priced
+            var priced = product instanceof Priced
                     p ? p.price() : product.basePrice(); // Feature Envy
             unitPrice = priced;
         } catch (Exception e) {

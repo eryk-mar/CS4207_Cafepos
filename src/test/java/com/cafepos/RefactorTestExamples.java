@@ -1,6 +1,6 @@
 package com.cafepos;
-import com.cafepos.common.Money;
-import com.cafepos.pricing.*;
+import com.cafepos.domain.common.Money;
+import com.cafepos.domain.pricing.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 public class RefactorTestExamples {

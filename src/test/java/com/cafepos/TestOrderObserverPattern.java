@@ -1,10 +1,10 @@
 package com.cafepos;
 
-import com.cafepos.catalog.SimpleProduct;
-import com.cafepos.common.Money;
+import com.cafepos.domain.catalog.SimpleProduct;
+import com.cafepos.domain.common.Money;
 import com.cafepos.domain.LineItem;
-import com.cafepos.payment.CardPayment;
-import com.cafepos.payment.WalletPayment;
+import com.cafepos.domain.payment.CardPayment;
+import com.cafepos.domain.payment.WalletPayment;
 import org.junit.jupiter.api.Test;
 import com.cafepos.domain.Order;
 import static org.junit.jupiter.api.Assertions.*;
