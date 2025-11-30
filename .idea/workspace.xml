@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="- Addition of ui package/classes&#10;- Addition of app package and its classes (event bus)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/FinalizedDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f4b1801f-a3ad-4c77-bc8e-1c28fb2db0a4" name="Changes" comment="Addition of FinalizedDemo">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/FinalizedDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/cafepos/demo/FinalizedDemo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +189,7 @@
       <workItem from="1762253378038" duration="5007000" />
       <workItem from="1762711817436" duration="41000" />
       <workItem from="1762788541813" duration="23419000" />
-      <workItem from="1764427057813" duration="14145000" />
+      <workItem from="1764427057813" duration="14731000" />
     </task>
     <task id="LOCAL-00001" summary="God method + test">
       <option name="closed" value="true" />
@@ -496,7 +495,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764434740104</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Addition of FinalizedDemo">
+      <option name="closed" value="true" />
+      <created>1764504786757</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1764504786757</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor(discount): Extract Interface DiscountPolicy to fix Primitive Obsession (behaviour preserved) (FIX for previous commit)&#10;&#10;NEW&#10;refactor(discount): Extract Class NoDiscount to fix Shotgun Surgery (behavior preserved)" />
     <MESSAGE value="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behavior preserved)" />
     <MESSAGE value="refactor(discount): Extract Class FixedCouponDiscount to fix Primitive Obsession (behaviour preserved)" />
     <MESSAGE value="refactor(discount): Extract Class LoyaltyPercentDiscount to fix Duplicated Logic (behaviour preserved)" />
@@ -539,7 +545,8 @@
     <MESSAGE value="Added tests" />
     <MESSAGE value="addition of states + tests" />
     <MESSAGE value="- Addition of ui package/classes&#10;- Addition of app package and its classes (event bus)" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Addition of ui package/classes&#10;- Addition of app package and its classes (event bus)" />
+    <MESSAGE value="Addition of FinalizedDemo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addition of FinalizedDemo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

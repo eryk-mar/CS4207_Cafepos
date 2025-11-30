@@ -35,9 +35,9 @@ public final class FinalizedDemo {
         System.out.println("\n2. COMPOSITE & ITERATOR PATTERNS");
         Menu menu = new Menu("Drinks");
         Menu coffee = new Menu("Coffee");
-        coffee.add(new MenuItem("Espresso", Money.of(3.50), false));
-        coffee.add(new MenuItem("Latte", Money.of(4.00), false));
-        coffee.add(new MenuItem("Cappuccino", Money.of(3.80), false));
+        coffee.add(new MenuItem("Espresso", Money.of(3.50), true));
+        coffee.add(new MenuItem("Latte", Money.of(4.00), true));
+        coffee.add(new MenuItem("Cappuccino", Money.of(3.80), true));
         menu.add(coffee);
 
         System.out.println("   Menu structure:");
