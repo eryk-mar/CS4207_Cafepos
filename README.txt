@@ -38,6 +38,17 @@ The current scope of the Café POS & Delivery system is small and tightly integr
 Since the module is about learning design patterns, a layered monolith allows us to concentrate on clean architecture, cohesion, and maintainability.
 It also simplifies testing and development, enabling faster iteration while the domain model is still evolving.
 
+Which seams are natural candidates for future partitioning (e.g., Payments, Notifications)?
+Payments, alerts, and reporting are obvious choices for service extraction in the future.
+Payments have specific security requirements (in the real world) and interact with external gateways. Multiple channels with different scaling requirements are managed by notifications.
+ Reporting is a data-intensive process that requires specialized resources.
+ Since order management and product catalog represent different business domains, they may also develop into stand-alone services.
+
+What are the connectors/protocols you would define if splitting (events, REST APIs)?
+We would use REST APIs with versioned contracts for synchronous operations like payments.
+For dependable delivery, asynchronous events like order status changes would pass through message brokers like Kafka.
+For performance-critical interactions, gRPC may be used in internal service communication, with API gateways handling external access points.
+
 ADR: Use Layered Monolith Architecture
 
 Context:
