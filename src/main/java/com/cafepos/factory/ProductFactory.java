@@ -5,14 +5,23 @@ import com.cafepos.decorator.*;
 
 public final class ProductFactory {
     public Product create(String recipe) {
+        String[] parts = normalize(recipe);
+        Product base = createBase(parts[0]);
+        return applyAddons(base, parts);
+    }
+
+    private String[] normalize(String recipe) {
         if (recipe == null || recipe.isBlank()) throw new
                 IllegalArgumentException("recipe required");
         String[] raw = recipe.split("\\+");
-        String[] parts = java.util.Arrays.stream(raw)
+        return java.util.Arrays.stream(raw)
                 .map(String::trim)
                 .map(String::toUpperCase)
                 .toArray(String[]::new);
-        Product p = switch (parts[0]) {
+    }
+
+    private Product createBase(String code) {
+        return switch (code) {
             case "ESP" -> new SimpleProduct("P-ESP", "Espresso",
                     Money.of(2.50));
             case "LAT" -> new SimpleProduct("P-LAT", "Latte",
@@ -20,8 +29,12 @@ public final class ProductFactory {
             case "CAP" -> new SimpleProduct("P-CAP",
                     "Cappuccino", Money.of(3.00));
             default -> throw new
-                    IllegalArgumentException("Unknown base: " + parts[0]);
+                    IllegalArgumentException("Unknown base: " + code);
         };
+    }
+
+    private Product applyAddons(Product base, String[] parts) {
+        Product p = base;
         for (int i = 1; i < parts.length; i++) {
             p = switch (parts[i]) {
                 case "SHOT" -> new ExtraShot(p); // 0.80
